@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "sample-project"
+version = "0.1.0"
+description = ""
+authors = ["Author Name <author@example.com>"]
+# readme = "README.md"
+# license = "BSD"
+packages = [
+  { include = "sample_package" }
+]
+
+[tool.poetry.dependencies]
+python = "~3.12"
+# To add dependencies, use `nix develop` and then `poetry add <name of package>`.
+# <name of package> could for example be "pandas" or "flask".
+# You can then check whether it works by exiting the nix shell and then using `nix develop` again.
+#
+# You can also add them manually in the same format as Python above if you know
+# which version you want.
+# For example:
+# pandas = "^2.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
